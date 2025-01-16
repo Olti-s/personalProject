@@ -55,18 +55,52 @@ button{
    transition: all 0,3s ease 0s;
    cursor: pointer;
    
+   
+   
 }
 
 button:hover{
     background-color:#123793;
 }
+
+
+main{
+    width: 100%;
+    position:absolute;
+    text-align:center;
+    background-image:url("bg.jpg");
+    height:50%;
+
+}
+main h1{
+    font-size:70px;
+    margin-top:80px;
+    padding: 12px;
+}
+
+.main-button{
+    width:200px ;
+    padding:20px;
+    margin:20px;
+   
+    
+        
+}
+
+.main-button:hover{
+    border:2px solid black;
+}
+
+
+
+
     </style>
 </head>
 <body>
     
 <header>
        
-       <img  src="/img/s (1).png" alt="">
+       <img  src="" alt="">
         <nav>
             <ul class="nav-links" >
             
@@ -79,6 +113,44 @@ button:hover{
         <a class="button" href="login.php"> <button>SIGN IN</button></a>
         
     </header>
-</body>
+
+    <main>
+
+ <div class="container">
+    <div class="main">
+   
+    <h1>FIND YOUR STYLE DECORATION</h1>
+        <button href="" class="main-button" > SHOP NOW</button> 
+        <button href="" class="main-button" >MORE INFORMATION</button>
+    </div>
+ </div>
+
+
+</main>
+
+<footer class="bd-dark text-white py-3 mt-255">
+
+  <div class="container text-center" >
+    <p>&copy; 2025  Boking System</p>
+  </div> 
+
+
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+</body> 
+
+
+
 </html>
 
