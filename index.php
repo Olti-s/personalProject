@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <style>
+        
 
     *{
         margin :0;
@@ -58,7 +60,7 @@ button{
 }
 
 button:hover{
-    background-color:pink;
+    background-color:#123793;
 }
 
 
@@ -160,7 +162,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:pink;
+    background:;
 
 
 }
@@ -178,11 +180,21 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:pink;
+    background:#f5f5f5;
  
 
 }
-
+#pages{
+    font-size:17px;
+    padding: 0 0 0 25px;
+}
+#navbarScroll{
+    margin-left:530px;
+    
+}
+#loginbutton{
+    margin-left:500px;
+}
 .container2{
     position: absolute;
     margin: 690px 1120px;
@@ -190,7 +202,6 @@ button:hover{
     height: 500px;
     justify-content: space-between;
     border-radius: 5px;
-   
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -201,9 +212,9 @@ button:hover{
 
 }
 
-.products{
-    
-}
+
+
+
 
 
 
@@ -212,21 +223,48 @@ button:hover{
 </head>
 <body>
     
-<header>
-       
-       <img  src="/img/s (1).png" alt="">
-        <nav>
-            <ul class="nav-links" >
-            
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                
-            </ul>
-        </nav>
-        <a class="button" href="login.php"> <button>SIGN IN</button></a>
+
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+ 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">REPIT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll"   >
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item" id="pages">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item" id="pages">
+          <a class="nav-link" href="#">PRODUCT</a>
+        </li>
+
+        <li class="nav-item" id="pages">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
         
-    </header>
+       
+      </ul>
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="loginbutton" >
+      LOGIN
+    </button>
+    <ul class="dropdown-menu " id="loginbutton">
+      <li><a class="dropdown-item" href="login.php">LOGIN AS A MEMBER</a></li>
+      <li><a class="dropdown-item" href="#">LOGIN AS A STAF</a></li>
+    </ul>
+  </div>
+</div>
+    </div>
+  </div>
+   </nav>
+ 
+ </nav>
     
     
    <main>
@@ -249,7 +287,7 @@ button:hover{
   
     <div class="container3">
             <img src="image/bag-removebg.png" alt="Women's Leather Bag" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Women's Leather Bag</h1>
+            <h1 class="title"> Women's Bag</h1>
             <p>Sale price: <span class="sale-price">$96.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
@@ -290,6 +328,11 @@ button:hover{
         
 </main>
    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
 
 
 </body>
