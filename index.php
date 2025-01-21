@@ -149,7 +149,7 @@ button:hover{
 
 .container3{
     position: absolute;
-    margin:540px 80px;
+    margin: 690px 120px;
     width: 380px;
     height: 500px;
     justify-content: space-between;
@@ -167,7 +167,7 @@ button:hover{
 
 .container1{
     position: absolute;
-    margin:540px 580px;
+    margin: 690px 620px;
     width: 380px;
     height: 500px;
     justify-content: space-between;
@@ -185,7 +185,7 @@ button:hover{
 
 .container2{
     position: absolute;
-    margin:540px 1080px;
+    margin: 690px 1120px;
     width: 380px;
     height: 500px;
     justify-content: space-between;
@@ -200,6 +200,13 @@ button:hover{
  
 
 }
+
+.products{
+    
+}
+
+
+
 
     </style>
 </head>
@@ -237,6 +244,7 @@ button:hover{
     <br>
    
     
+    <div class="products">
 
   
     <div class="container3">
@@ -254,8 +262,8 @@ button:hover{
 
         <div class="container1">
             <img src="image/rolex-png-rolex-watch-png-transparent-image-524__1_-removebg.png" alt="Women's Leather Bag" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Women's Leather Bag</h1>
-            <p>Sale price: <span class="sale-price">$96.00</span> 
+            <h1 class="title"> Rolex Watch</h1>
+            <p>Sale price: <span class="sale-price">$19600.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
                 <li class="feature">Spacious interior with multiple compartments</li>
@@ -267,8 +275,8 @@ button:hover{
 
         <div class="container2">
             <img src="image/j1 low gs.png" alt=" Hoodie" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Men's Hoodie</h1>
-            <p>Sale price: <span class="sale-price">$45.00</span> 
+            <h1 class="title"> Jordan 1 Low</h1>
+            <p>Sale price: <span class="sale-price">$450.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
                 <li class="feature">Spacious interior with multiple compartments</li>
@@ -276,6 +284,8 @@ button:hover{
                 <li class="feature">Perfect for work or travel</li>
             </ul>
             <a class="cta" href="#">Order Now</a>
+        </div>
+
         </div>
         
 </main>
