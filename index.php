@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <style>
 
     *{
@@ -58,7 +59,7 @@ button{
 }
 
 button:hover{
-    background-color:pink;
+    background-color:#6667AB;
 }
 
 
@@ -105,6 +106,7 @@ button:hover{
     font-weight: bold;
     font-size: 1.5em;
 }
+
 .regular-price {
     color: gray;
     text-decoration: line-through;
@@ -136,7 +138,7 @@ button:hover{
     line-height: 1.4;
 }
 .cta {
-    background-color: red;
+    background-color: black;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -160,7 +162,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:pink;
+    background:#6667AB;
 
 
 }
@@ -178,11 +180,21 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:pink;
+    background:#6667AB;
  
 
 }
-
+#dropdown{
+    margin-left:380px;
+}
+#items{
+    margin-left:5px;
+    padding-left: 470px;
+    
+}
+#join{
+    padding-left:320px;
+}
 .container2{
     position: absolute;
     margin:540px 1080px;
@@ -196,7 +208,9 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:pink;
+    background: #6667AB;
+
+
  
 
 }
@@ -205,22 +219,37 @@ button:hover{
 </head>
 <body>
     
-<header>
-       
-       <img  src="/img/s (1).png" alt="">
-        <nav>
-            <ul class="nav-links" >
-            
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                
-            </ul>
-        </nav>
-        <a class="button" href="login.php"> <button>SIGN IN</button></a>
-        
-    </header>
-    
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">BowerShopping</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown"  >
+      <ul class="navbar-nav" id="items">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown"id="join" >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu" id="dropdown" >
+            <li><a class="dropdown-item" href="#">Login as a Member</a></li>
+            <li><a class="dropdown-item" href="#">Login as a Staff Member</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     
    <main>
 
@@ -238,7 +267,7 @@ button:hover{
    
     
 
-  
+     
     <div class="container3">
             <img src="image/bag-removebg.png" alt="Women's Leather Bag" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
             <h1 class="title"> Women's Leather Bag</h1>
@@ -254,7 +283,7 @@ button:hover{
 
         <div class="container1">
             <img src="image/rolex-png-rolex-watch-png-transparent-image-524__1_-removebg.png" alt="Women's Leather Bag" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Women's Leather Bag</h1>
+            <h1 class="title"> Rolex watch</h1>
             <p>Sale price: <span class="sale-price">$96.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
@@ -267,8 +296,8 @@ button:hover{
 
         <div class="container2">
             <img src="image/j1 low gs.png" alt=" Hoodie" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Men's Hoodie</h1>
-            <p>Sale price: <span class="sale-price">$45.00</span> 
+            <h1 class="title"> Men's Jordan 1</h1>
+            <p>Sale price: <span class="sale-price">$145.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
                 <li class="feature">Spacious interior with multiple compartments</li>
@@ -277,11 +306,16 @@ button:hover{
             </ul>
             <a class="cta" href="#">Order Now</a>
         </div>
+
+        
         
 </main>
    
 
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 
