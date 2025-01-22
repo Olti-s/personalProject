@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <style>
+        
 
     *{
         margin :0;
@@ -59,7 +60,7 @@ button{
 }
 
 button:hover{
-    background-color:#6667AB;
+    background-color:pink;
 }
 
 
@@ -151,7 +152,7 @@ button:hover{
 
 .container3{
     position: absolute;
-    margin:540px 80px;
+    margin: 690px 120px;
     width: 380px;
     height: 500px;
     justify-content: space-between;
@@ -162,14 +163,14 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:#6667AB;
+    background:pink;
 
 
 }
 
 .container1{
     position: absolute;
-    margin:540px 580px;
+    margin: 690px 620px;
     width: 380px;
     height: 500px;
     justify-content: space-between;
@@ -180,29 +181,18 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:#6667AB;
+    background:pink;
  
 
 }
-#dropdown{
-    margin-left:380px;
-}
-#items{
-    margin-left:5px;
-    padding-left: 470px;
-    
-}
-#join{
-    padding-left:320px;
-}
+
 .container2{
     position: absolute;
-    margin:540px 1080px;
+    margin: 690px 1120px;
     width: 380px;
     height: 500px;
     justify-content: space-between;
     border-radius: 5px;
-   
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -215,41 +205,33 @@ button:hover{
 
 }
 
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
     
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">BowerShopping</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown"  >
-      <ul class="navbar-nav" id="items">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown"id="join" >
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Login
-          </a>
-          <ul class="dropdown-menu" id="dropdown" >
-            <li><a class="dropdown-item" href="#">Login as a Member</a></li>
-            <li><a class="dropdown-item" href="#">Login as a Staff Member</a></li>
-           
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<header>
+       
+       <img  src="/img/s (1).png" alt="">
+        <nav>
+            <ul class="nav-links" >
+            
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                
+            </ul>
+        </nav>
+        <a class="button" href="login.php"> <button>SIGN IN</button></a>
+        
+    </header>
+    
     
    <main>
 
@@ -266,11 +248,12 @@ button:hover{
     <br>
    
     
+    <div class="products">
 
      
     <div class="container3">
             <img src="image/bag-removebg.png" alt="Women's Leather Bag" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Women's Leather Bag</h1>
+            <h1 class="title"> Women's Bag</h1>
             <p>Sale price: <span class="sale-price">$96.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
@@ -283,7 +266,7 @@ button:hover{
 
         <div class="container1">
             <img src="image/rolex-png-rolex-watch-png-transparent-image-524__1_-removebg.png" alt="Women's Leather Bag" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Rolex watch</h1>
+            <h1 class="title"> Women's Leather Bag</h1>
             <p>Sale price: <span class="sale-price">$96.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
@@ -296,8 +279,8 @@ button:hover{
 
         <div class="container2">
             <img src="image/j1 low gs.png" alt=" Hoodie" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
-            <h1 class="title"> Men's Jordan 1</h1>
-            <p>Sale price: <span class="sale-price">$145.00</span> 
+            <h1 class="title"> Men's Hoodie</h1>
+            <p>Sale price: <span class="sale-price">$45.00</span> 
             <ul class="features">
                 <li class="feature">Made of high-quality leather</li>
                 <li class="feature">Spacious interior with multiple compartments</li>
@@ -306,11 +289,14 @@ button:hover{
             </ul>
             <a class="cta" href="#">Order Now</a>
         </div>
-
-        
         
 </main>
    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
