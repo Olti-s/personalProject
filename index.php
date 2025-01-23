@@ -60,7 +60,7 @@ button{
 }
 
 button:hover{
-    background-color:pink;
+    background-color:#6667AB ;
 }
 
 
@@ -149,6 +149,10 @@ button:hover{
     margin-top: 20px;
 }
 
+#items{
+    margin-left:500px;
+    padding-left:12px;
+}
 
 .container3{
     position: absolute;
@@ -163,9 +167,13 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:pink;
+    background:#6667AB;
 
 
+}
+
+#login{
+   margin-left:520px;   
 }
 
 .container1{
@@ -181,7 +189,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:pink;
+    background:#6667AB;
  
 
 }
@@ -216,21 +224,38 @@ button:hover{
 </head>
 <body>
     
-<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">BowerShopping</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="items">
+        <li class="nav-item"  >
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="#">Products</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown" id="login"  >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu"   >
+            <li><a class="dropdown-item" href="login.php">Login as a member</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Login as a staff member</a></li>
+          </ul>
+        </li>
        
-       <img  src="/img/s (1).png" alt="">
-        <nav>
-            <ul class="nav-links" >
-            
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                
-            </ul>
-        </nav>
-        <a class="button" href="login.php"> <button>SIGN IN</button></a>
-        
-    </header>
+      </ul>
+    </div>
+  </div>
+</nav>
     
     
    <main>
@@ -293,15 +318,10 @@ button:hover{
 </main>
    
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 
