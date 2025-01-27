@@ -9,7 +9,7 @@
 
   
 
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
     <style>
@@ -71,7 +71,7 @@
 <body>
     
     <div class="main">
-        <!-- Login Area -->
+        
         <div class="login" id="loginForm">
             <h2 class="text-center">Login Form</h2>
             <div class="login-form">
@@ -84,13 +84,14 @@
                         <label for="password">Password:</label>
                         <input type="password" class="form-control form-control-sm" id="password" name="password">
                     </div>
-                    <p class="registrationForm" onclick="showRegistrationForm()">No Account? Register Here.</p>
+                    <p class="registrationForm" onclick="showRegistrationForm()"> Register Here.</p>
                     <button type="submit" class="btn btn-primary login-btn form-control">Login</button>
                 </form>
             </div>
         </div>
 
-        <!-- Registration Area -->
+        
+        
         <div class="registration" id="registrationForm">
             <h2 class="text-center">Registration Form</h2>
             <div class="registration-form">
@@ -131,11 +132,10 @@
     </div>
 
     <script>
-        // Constant variables
+       
         const loginForm = document.getElementById('loginForm');
         const registrationForm = document.getElementById('registrationForm');
 
-        // Hide registration form
         registrationForm.style.display = "none";
 
 
@@ -151,7 +151,7 @@
 
     </script>
 
-    <!-- Bootstrap Js -->
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
