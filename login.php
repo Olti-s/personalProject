@@ -1,4 +1,4 @@
-<?php include ('./conn/conn.php') ?>
+<?php include ('conn.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +72,7 @@
     
     <div class="main">
         
-        <div class="login" id="loginForm">
+        <div class="login" id="loginForm" action="add.php" method="POST"  >
             <h2 class="text-center">Login Form</h2>
             <div class="login-form">
                 <form action="./endpoint/login.php" method="POST">
@@ -92,7 +92,7 @@
 
         
         
-        <div class="registration" id="registrationForm">
+        <div class="registration" id="registrationForm" action="add.php" method="POST">
             <h2 class="text-center">Registration Form</h2>
             <div class="registration-form">
                 <form action="./endpoint/add-user.php" method="POST">
