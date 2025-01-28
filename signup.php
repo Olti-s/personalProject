@@ -71,28 +71,10 @@
 <body>
     
     <div class="main">
-        
-        <div class="login" id="loginForm">
-            <h2 class="text-center">Login Form</h2>
-            <div class="login-form">
-                <form action="loginLogic.php" method="POST">
-                    <div class="form-group">
-                        <label for="username">Username:</label>
-                        <input type="text" class="form-control form-control-sm" id="username" name="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password:</label>
-                        <input type="password" class="form-control form-control-sm" id="password" name="password">
-                    </div>
-                    <p class="registrationForm" onclick="showRegistrationForm()"> Register Here.</p>
-                    <button type="submit" class="btn btn-primary login-btn form-control">Login</button>
-                </form>
-            </div>
-        </div>
-
+    
         
         
-        <!-- <div class="registration" id="registrationForm">
+         <div class="registration" id="registrationForm">
             <h2 class="text-center">Registration Form</h2>
             <div class="registration-form">
                 <form action="register.php" method="POST">
@@ -129,28 +111,9 @@
                 </form>
             </div>
         </div>
-    </div> -->
+    </div> 
 
-    <script>
-       
-        const loginForm = document.getElementById('loginForm');
-        const registrationForm = document.getElementById('registrationForm');
-
-        registrationForm.style.display = "none";
-
-
-        function showRegistrationForm() {
-            registrationForm.style.display = "";
-            loginForm.style.display = "none";
-        }
-
-        function showLoginForm() {
-            registrationForm.style.display = "none";
-            loginForm.style.display = "";
-        }
-
-    </script>
-
+   
     
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

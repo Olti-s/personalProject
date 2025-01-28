@@ -1,47 +1,36 @@
-<?php 
+<?php
 
- include ('./conn/conn.php')
+	include_once('conn.php');
 
-if(isset($_POST['submit'])){
-    $username = $_POST['username'];
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $password = $_POST['password'];
-    $email = $_POST ['email']; 
-    $contact_number = $_POST['contact_number'];
-}
+	if(isset($_POST['submit']))
+	{
 
-
-try{
+        $username = $_POST['username'];
+	    $name = $_POST['first_name'];
+		$surname = $_POST['last_name'];
+		
+		$email = $_POST['email'];
+		
 
 
-    $sql = " INSERT INTO tbl_user (username,first_name,last_name,password,email,contact_number) VALUES (:username, :first_name, :last_name, :password, :email, :contact_number)"
+			$sql = "INSERT INTO users(username,first_name,last_name,email) VALUES (:username, :first_name, :last_name, :email)";
 
-$insertSql = $pdo->prepare($sql);
+			$insertSql = $conn->prepare($sql);
 
-$insertSql->bindParam(':username', $username);
-$insertSql->bindParam(':first_name', $first_name);
-$insertSql->bindParam(':last_name', $last_name);
-$insertSql->bindParam(':password', $Password);
-$insertSql->bindParam(':email', $email);
-$insertSql->bindParam(':contact_number', $contact_number);
+			$insertSql->bindParam(':username', $username);
+			$insertSql->bindParam(':first_name', $name);
+			$insertSql->bindParam(':last_name', $surname);
+			$insertSql->bindParam(':email', $email);
 
+			$insertSql->execute();
 
+			echo "The user has been added successfully";
 
+			echo "<br>";
 
-$insertSql->execute();
+			echo "<a href='dashboard.php'>Dashboard</a>";
 
-echo "the user has been added sucessfully <br>"
-echo "<a href="dashbord.php">Dashbord</a>"
-
-}catch(PDOExecption $e){
-    echo "Error" . $e->getMessage();
-
-}
-
-
-
-
+	}
 
 
 ?>
