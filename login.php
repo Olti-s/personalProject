@@ -108,10 +108,14 @@
 
         
         
+<<<<<<< HEAD
         <!-- <div class="registration" id="registrationForm" action="add.php" method="POST">
+=======
+        <!-- <div class="registration" id="registrationForm">
+>>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
             <h2 class="text-center">Registration Form</h2>
             <div class="registration-form">
-                <form action="./endpoint/add-user.php" method="POST">
+                <form action="register.php" method="POST">
                     <div class="form-group row">
                         <div class="col-6">
                             <label for="firstName">First Name:</label>
@@ -141,7 +145,7 @@
                         <input type="password" class="form-control form-control-sm" id="registerPassword" name="password">
                     </div>
                     <p class="registrationForm" onclick="showLoginForm()"><- Back</p>
-                    <button type="submit" class="btn btn-primary login-register form-control">Register</button>
+                    <button type="submit" class="btn btn-primary login-register form-control" href="register.php" >Register</button>
                 </form>
             </div>
         </div>
