@@ -44,8 +44,8 @@ $data = $prep->fetch();
 	<form action="update.php" method="POST">
 	<input type="number" name="id"  value="<?php echo $data['id']?>" readonly><br>
     <input type="text" name="username" value="<?php echo $data['username']?>"><br>
-    <input type="text" name="name" value="<?php echo $data['first_name']?>"><br>
-    <input type="text" name="surname" value="<?php echo $data['last_name']?>"><br>
+    <input type="text" name="name" value="<?php echo $data['name']?>"><br>
+    <input type="text" name="surname" value="<?php echo $data['surname']?>"><br>
     <input type="email" name="email" value="<?php echo $data['email']?>"><br>
 
 		<br><br>

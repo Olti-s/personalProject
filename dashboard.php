@@ -32,8 +32,8 @@
 
 	<?php 
 
-		
-    include_once('conn.php');
+		include_once('conn.php');
+
 		$getUsers = $conn->prepare("SELECT * FROM users");
 
 		$getUsers->execute();
@@ -65,8 +65,8 @@
 			<tr> 
 				<td> <?= $user['id'] ?> </td>
 				<td> <?= $user['username'] ?> </td>
-				<td> <?= $user['first_name']  ?> </td> 
-				<td> <?= $user['last_name']  ?> </td> 
+				<td> <?= $user['name']  ?> </td> 
+				<td> <?= $user['surname']  ?> </td> 
 				<td> <?= $user['email']  ?> </td>
 				<td> <?= "<a href='delete.php?id=$user[id]'> Delete</a>| <a href='edit.php?id=$user[id]'> Update </a>"?></td>
 
@@ -81,7 +81,7 @@
 
 	 </table>
 
-	 <a href="login.php">Add User</a>
+	 <a href="index.php">Add User</a>
 	
 </body>
 </html>

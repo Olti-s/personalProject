@@ -70,12 +70,12 @@
 </head>
 <body>
     
-    <div class="main">
-        
+    <div class="main"> 
+       
         <div class="login" id="loginForm" action="add.php" method="POST"  >
             <h2 class="text-center">Login Form</h2>
             <div class="login-form">
-                <form action="./endpoint/login.php" method="POST">
+                <form action="loginLogic.php" method="POST">
                     <div class="form-group">
                         <label for="username">Username:</label>
                         <input type="text" class="form-control form-control-sm" id="username" name="username">
@@ -84,15 +84,31 @@
                         <label for="password">Password:</label>
                         <input type="password" class="form-control form-control-sm" id="password" name="password">
                     </div>
-                    <p class="registrationForm" onclick="showRegistrationForm()"> Register Here.</p>
-                    <button type="submit" class="btn btn-primary login-btn form-control">Login</button>
+                    <small>You dont have an account ? <a href="signup.php">Sign Up</a></small>
+                    <button type='submit' name='submit' class="btn btn-primary login-btn form-control">Login</button>
                 </form>
             </div>
         </div>
+        <!-- <div class="login">
+        <form action="loginLogic.php" class='form-signin' method='POST'>
+            <h1 class='h3 mb-3 font-weight-normal'>Please sign in</h1>
+
+            <label for="inputEmail" class='sr-only'>Username</label>
+            <input type="text" id="inputEmail" class='form-control' placeholder='username' name='username'>
+
+            <button class='btn btn-lg btn-primary btn-block' type='submit' name='submit'>Sign In</button>
+            
+            <small>You dont have an account ? <a href="signup.php">Sign Up</a></small>
+
+           
+            
+        </form> -->
+    
+    </div>
 
         
         
-        <div class="registration" id="registrationForm" action="add.php" method="POST">
+        <!-- <div class="registration" id="registrationForm" action="add.php" method="POST">
             <h2 class="text-center">Registration Form</h2>
             <div class="registration-form">
                 <form action="./endpoint/add-user.php" method="POST">
@@ -129,9 +145,9 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <script>
+    <!-- <script>
        
         const loginForm = document.getElementById('loginForm');
         const registrationForm = document.getElementById('registrationForm');
@@ -149,7 +165,7 @@
             loginForm.style.display = "";
         }
 
-    </script>
+    </script> -->
 
     
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

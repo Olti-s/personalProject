@@ -1,9 +1,9 @@
 <?php
 include_once('conn.php');
 if(isset($_POST['submit'])){
-    $name= $_POST['first_name'];
+    $name= $_POST['name'];
     $username=$_POST['username'];
-    $surname=$_POST['last_name'];
+    $surname=$_POST['surname'];
     $email=$_POST['email'];
 
     if(empty($name)|| empty($username)||empty($surname)|| empty($email)){
@@ -21,11 +21,11 @@ if(isset($_POST['submit'])){
             header("refresh:3; url=signu.php");
         }
         else{
-            $sql ='INSERT INTO users (name, surname ,username, email) VALUES (:first_name,:last_name,:username,:email)'
+            $sql ='INSERT INTO users (name, surname ,username, email) VALUES (:name,:surname,:username,:email)';
             $insertSql = $conn->prepare($sql);
 
-            $insertSql->bindParam(':first_name' ,$name);
-            $insertSql->bindParam(":last_name" ,$surname);
+            $insertSql->bindParam(':name' ,$name);
+            $insertSql->bindParam(":surname" ,$surname);
             $insertSql->bindParam(':username' ,$username);
             $insertSql->bindParam(":email" , $email);
 
