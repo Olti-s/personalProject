@@ -246,7 +246,7 @@ button:hover{
             Login
           </a>
           <ul class="dropdown-menu"   >
-            <li><a class="dropdown-item" href="login.php">Login as a member</a></li>
+            <li><a class="dropdown-item" href="login.php">Signin</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="signup.php">Signup</a></li>
           </ul>

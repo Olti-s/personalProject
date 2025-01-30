@@ -80,19 +80,15 @@
                 <form action="register.php" method="POST">
                     <div class="form-group row">
                         <div class="col-6">
-                            <label for="firstName">First Name:</label>
-                            <input type="text" class="form-control form-control-sm" id="firstName" name="first_name">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control form-control-sm" id="name" name="name">
                         </div>
                         <div class="col-6">
-                            <label for="lastName">Last Name:</label>
-                            <input type="text" class="form-control form-control-sm" id="lastName" name="last_name">
+                            <label for="name">Surname:</label>
+                            <input type="text" class="form-control form-control-sm" id="surname" name="surname">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-5">
-                            <label for="contactNumber">Contact Number:</label>
-                            <input type="number" class="form-control form-control-sm" id="contactNumber" name="contact_number" maxlength="11">
-                        </div>
                         <div class="col-7">
                             <label for="email">Email:</label>
                             <input type="text" class="form-control" id="email" name="email">
@@ -100,7 +96,7 @@
                     </div>
                     <div class="form-group">
                         <label for="registerUsername">Username:</label>
-                        <input type="text" class="form-control form-control-sm" id="registerUsername" name="username">
+                        <input type="text" class="form-control form-control-sm" id="username" name="username">
                     </div>
                     <div class="form-group">
                         <label for="registerPassword">Password:</label>

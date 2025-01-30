@@ -6,21 +6,22 @@
 	{
 
         $username = $_POST['username'];
-	    $name = $_POST['first_name'];
-		$surname = $_POST['last_name'];
-		
+	    $name = $_POST['name'];
+		$surname = $_POST['surname'];
+		$password = $_POST['password'];
 		$email = $_POST['email'];
 		
 
 
-			$sql = "INSERT INTO users(username,first_name,last_name,email) VALUES (:username, :first_name, :last_name, :email)";
+			$sql = "INSERT INTO users(username,name,surname,email,password) VALUES (:username, :name, :surname, :email, password)";
 
 			$insertSql = $conn->prepare($sql);
 
 			$insertSql->bindParam(':username', $username);
-			$insertSql->bindParam(':first_name', $name);
-			$insertSql->bindParam(':last_name', $surname);
+			$insertSql->bindParam(':name', $name);
+			$insertSql->bindParam(':surname', $surname);
 			$insertSql->bindParam(':email', $email);
+			$insertSql->bindParam(':password', $password);
 
 			$insertSql->execute();
 
