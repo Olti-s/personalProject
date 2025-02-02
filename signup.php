@@ -128,6 +128,7 @@
                     <div class="form-group row">
                         <div class="col-6">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <label for="firstName"> Name:</label>
                             <input type="text" class="form-control form-control-sm" id="firstName" name="first_name">
                         </div>
@@ -152,6 +153,17 @@
                             <input type="number" class="form-control form-control-sm" id="contactNumber" name="contact_number" maxlength="11">
                         </div>
 >>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
+=======
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control form-control-sm" id="name" name="name">
+                        </div>
+                        <div class="col-6">
+                            <label for="name">Surname:</label>
+                            <input type="text" class="form-control form-control-sm" id="surname" name="surname">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+>>>>>>> c5477f45b378c0c4732d99cbe98f14ba3a909506
                         <div class="col-7">
                             <label for="email">Email:</label>
                             <input type="text" class="form-control" id="email" name="email">
@@ -159,7 +171,7 @@
                     </div>
                     <div class="form-group">
                         <label for="registerUsername">Username:</label>
-                        <input type="text" class="form-control form-control-sm" id="registerUsername" name="username">
+                        <input type="text" class="form-control form-control-sm" id="username" name="username">
                     </div>
                     <div class="form-group">
                         <label for="registerPassword">Password:</label>
