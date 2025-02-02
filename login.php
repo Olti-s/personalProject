@@ -108,7 +108,7 @@
 
         
         
-<<<<<<< HEAD
+
         <!-- <div class="registration" id="registrationForm" action="add.php" method="POST">
 =======
         <!-- <div class="registration" id="registrationForm">

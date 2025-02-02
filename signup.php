@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!-- 
 <div class='signup'>
 
@@ -25,8 +25,8 @@
     </form>
 </div> -->
 
+<!-- 
 
-<?php include_once('conn.php'); ?>
 
 
 
@@ -42,8 +42,8 @@
   <body>
     
 
-   <div class="registration" id="registrationForm" action="add.php" method="POST">
-=======
+   <div class="registration" id="registrationForm" action="add.php" method="POST"> -->
+
 <?php include ('conn.php') ?>
 
 <!DOCTYPE html>
@@ -121,39 +121,35 @@
         
         
          <div class="registration" id="registrationForm">
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
+
             <h2 class="text-center">Registration Form</h2>
             <div class="registration-form">
                 <form action="register.php" method="POST">
                     <div class="form-group row">
                         <div class="col-6">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <label for="firstName"> Name:</label>
+
+                            <!-- <label for="firstName"> Name:</label>
                             <input type="text" class="form-control form-control-sm" id="firstName" name="first_name">
                         </div>
                         <div class="col-6">
                             <label for="lastName">Surname:</label>
-=======
+
                             <label for="firstName">First Name:</label>
                             <input type="text" class="form-control form-control-sm" id="firstName" name="first_name">
                         </div>
                         <div class="col-6">
                             <label for="lastName">Last Name:</label>
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
+
                             <input type="text" class="form-control form-control-sm" id="lastName" name="last_name">
                         </div>
                     </div>
                     <div class="form-group row">
-<<<<<<< HEAD
 
-=======
                         <div class="col-5">
                             <label for="contactNumber">Contact Number:</label>
                             <input type="number" class="form-control form-control-sm" id="contactNumber" name="contact_number" maxlength="11">
-                        </div>
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
-=======
+                        </div> -->
+
                             <label for="name">Name:</label>
                             <input type="text" class="form-control form-control-sm" id="name" name="name">
                         </div>
@@ -163,7 +159,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
->>>>>>> c5477f45b378c0c4732d99cbe98f14ba3a909506
+
                         <div class="col-7">
                             <label for="email">Email:</label>
                             <input type="text" class="form-control" id="email" name="email">
@@ -177,7 +173,7 @@
                         <label for="registerPassword">Password:</label>
                         <input type="password" class="form-control form-control-sm" id="registerPassword" name="password">
                     </div>
-<<<<<<< HEAD
+
                     <small> <a href="login.php"><-Back</a></small>
                     <button type="submit" class="btn btn-primary login-register form-control">Register</button>
                 </form>
@@ -189,22 +185,21 @@
 
 
 
-=======
+<!-- 
                     <p class="registrationForm" onclick="showLoginForm()"><- Back</p>
                     <button type="submit" class="btn btn-primary login-register form-control" href="register.php" >Register</button>
                 </form>
             </div>
         </div>
-    </div> 
+    </div>  -->
 
    
     
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 
-<<<<<<< HEAD
 
     
 
@@ -212,4 +207,3 @@
 =======
 </body>
 </html>
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
