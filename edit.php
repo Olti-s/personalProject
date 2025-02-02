@@ -5,9 +5,6 @@ include_once("conn.php");
 
 $id = $_GET['id'];
 
-$id = $_POST['id'];
-
-// $id = $_POST['id'];
 
 
 $sql = "SELECT * FROM users WHERE id=:id";
@@ -53,17 +50,11 @@ $data = $prep->fetch();
 
     <input type="text" name="name" value="<?php echo $data['name']?>"><br>
     <input type="text" name="surname" value="<?php echo $data['surname']?>"><br>
-
-    <input type="text" name="first_name" value="<?php echo $data['first_name']?>"><br>
-    <input type="text" name="last_name" value="<?php echo $data['last_name']?>"><br>
-
-    <input type="text" name="name" value="<?php echo $data['name']?>"><br>
-    <input type="text" name="surname" value="<?php echo $data['surname']?>"><br>
-
     <input type="email" name="email" value="<?php echo $data['email']?>"><br>
+	<input type="password" name="password" value="<?php echo $data['password']?>"><br>
 
 		<br><br>
-		<button type="submit" name="update">UPDATE</button>
+		<button type="submit"  name="update">UPDATE</button>
        
 	</form>
     <a href="dashboard.php">Dashboard</a>

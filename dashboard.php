@@ -64,21 +64,16 @@
 		?>
 			<tr> 
 				<td> <?= $user['id'] ?> </td>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 				<td> <?= $user['username'] ?> </td>
 				<td> <?= $user['name']  ?> </td> 
 				<td> <?= $user['surname']  ?> </td> 
-=======
-				<td> <?= $user['first_name'] ?> </td>
-				<td> <?= $user['name']  ?> </td> 
-				<td> <?= $user['last_name']  ?> </td> 
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
-=======
+
+
 				<td> <?= $user['name'] ?> </td>
 				<td> <?= $user['username']  ?> </td> 
 				<td> <?= $user['surname']  ?> </td> 
->>>>>>> c5477f45b378c0c4732d99cbe98f14ba3a909506
+
 				<td> <?= $user['email']  ?> </td>
 				<td> <?= "<a href='delete.php?id=$user[id]'> Delete</a>| <a href='edit.php?id=$user[id]'> Update </a>"?></td>
 
@@ -93,11 +88,9 @@
 
 	 </table>
 
-<<<<<<< HEAD
-	 <a href="index.php">Add User</a>
-=======
+
 	 <a href="login.php">Add User</a>
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
+
 	
 </body>
 </html>

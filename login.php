@@ -1,4 +1,5 @@
-<?php include ('conn.php') ?>
+<?php include ('conn.php')
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -89,92 +90,20 @@
                 </form>
             </div>
         </div>
-        <!-- <div class="login">
-        <form action="loginLogic.php" class='form-signin' method='POST'>
-            <h1 class='h3 mb-3 font-weight-normal'>Please sign in</h1>
-
-            <label for="inputEmail" class='sr-only'>Username</label>
-            <input type="text" id="inputEmail" class='form-control' placeholder='username' name='username'>
-
-            <button class='btn btn-lg btn-primary btn-block' type='submit' name='submit'>Sign In</button>
-            
-            <small>You dont have an account ? <a href="signup.php">Sign Up</a></small>
-
-           
-            
-        </form> -->
+        
     
     </div>
 
         
-        
-
-        <!-- <div class="registration" id="registrationForm" action="add.php" method="POST">
-=======
-        <!-- <div class="registration" id="registrationForm">
->>>>>>> 5e5fbb6ef33d071b722c922df817c3d09c44a296
-            <h2 class="text-center">Registration Form</h2>
-            <div class="registration-form">
-                <form action="register.php" method="POST">
-                    <div class="form-group row">
-                        <div class="col-6">
-                            <label for="firstName">First Name:</label>
-                            <input type="text" class="form-control form-control-sm" id="firstName" name="first_name">
-                        </div>
-                        <div class="col-6">
-                            <label for="lastName">Last Name:</label>
-                            <input type="text" class="form-control form-control-sm" id="lastName" name="last_name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-5">
-                            <label for="contactNumber">Contact Number:</label>
-                            <input type="number" class="form-control form-control-sm" id="contactNumber" name="contact_number" maxlength="11">
-                        </div>
-                        <div class="col-7">
-                            <label for="email">Email:</label>
-                            <input type="text" class="form-control" id="email" name="email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="registerUsername">Username:</label>
-                        <input type="text" class="form-control form-control-sm" id="registerUsername" name="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="registerPassword">Password:</label>
-                        <input type="password" class="form-control form-control-sm" id="registerPassword" name="password">
-                    </div>
-                    <p class="registrationForm" onclick="showLoginForm()"><- Back</p>
-                    <button type="submit" class="btn btn-primary login-register form-control" href="register.php" >Register</button>
-                </form>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <script>
-       
-        const loginForm = document.getElementById('loginForm');
-        const registrationForm = document.getElementById('registrationForm');
-
-        registrationForm.style.display = "none";
 
 
-        function showRegistrationForm() {
-            registrationForm.style.display = "";
-            loginForm.style.display = "none";
-        }
-
-        function showLoginForm() {
-            registrationForm.style.display = "none";
-            loginForm.style.display = "";
-        }
-
-    </script> -->
+     
 
     
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-
+   
 </body>
 </html>
+
