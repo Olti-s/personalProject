@@ -89,7 +89,7 @@
 	 </table>
 
 
-	 <a href="login.php">Add User</a>
+	 <a href="signup.php">Add User</a>
 
 	
 </body>

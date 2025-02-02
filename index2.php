@@ -241,6 +241,9 @@ button:hover{
         <li class="nav-item" >
           <a class="nav-link" href="#">About</a>
         </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="dashboard.php">Dashboard</a>
+        </li>
         <li class="nav-item dropdown" id="login"  >
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Login

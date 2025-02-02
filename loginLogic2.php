@@ -1,9 +1,9 @@
- <?php
+<?php
     include_once('conn.php');
 
-    if(isset($_POST['submit'])){
-        $username = $_POST['username'];
-        $password= $_POST["password"];
+    if(isset($_POST['submit22'])){
+        $username = $_POST['username2'];
+        $password= $_POST["password2"];
 
         if(empty($username)|| empty($password)){
             echo "Fill all the fields";
@@ -21,5 +21,5 @@
     }
 
 
-    header('Location:index.php');
-?> 
+    header('Location:index2.php');
+?>
